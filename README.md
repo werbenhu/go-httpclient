@@ -31,7 +31,7 @@ go get github.com/werben/go-httpclient
 package main
 
 import (
-    "github.com/ddliu/go-httpclient"
+    "github.com/werben/go-httpclient"
 )
 
 func main() {
