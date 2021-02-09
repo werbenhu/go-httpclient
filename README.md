@@ -22,7 +22,7 @@ Advanced HTTP client for golang.
 ## Installation
 
 ```bash
-go get github.com/ddliu/go-httpclient
+go get github.com/werben/go-httpclient
 ```
 
 ## Quick Start

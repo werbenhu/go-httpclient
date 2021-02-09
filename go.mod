@@ -1,3 +1,3 @@
-module github.com/ddliu/go-httpclient
+module github.com/werben/go-httpclient
 
 go 1.12

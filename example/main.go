@@ -13,7 +13,7 @@ const (
 	USERAGENT       = "my awsome httpclient"
 	TIMEOUT         = 30
 	CONNECT_TIMEOUT = 5
-	SERVER          = "http://127.0.0.1/endpoint"
+	SERVER          = "http://dev.totok.cn/baidu/endpoint"
 )
 
 func main() {
@@ -45,9 +45,8 @@ func main() {
 
 	fmt.Println("Response:")
 	var obj Obj
-
-	err := res.Unmarshal(&obj)
-
-	fmt.Println(err)
+	if err := res.Unmarshal(&obj); err != nil {
+		fmt.Println(err)
+	}
 	fmt.Println(obj)
 }
