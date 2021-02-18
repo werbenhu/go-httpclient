@@ -680,6 +680,10 @@ func (this *HttpClient) Delete(url string, params ...interface{}) (*Response, er
 	return this.Do("DELETE", url, nil, nil)
 }
 
+func (this *HttpClient) DeleteJson(url string, data interface{}) (*Response, error) {
+	return this.sendJson("DELETE", url, data)
+}
+
 // The POST request
 //
 // With multipart set to true, the request will be encoded as
